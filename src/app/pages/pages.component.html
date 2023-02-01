@@ -1,0 +1,40 @@
+
+<div >
+
+
+  <div class="row">
+    <div class="sidebar" [ngClass]="{'oculto':!showMenu}">
+      
+      <app-sidebar></app-sidebar>
+
+      <div class="image-footer">
+       
+      </div>
+
+    </div>
+    
+
+    <div class="contenido" [ngClass]="{'desplazo':!showMenu}">
+        <div class="barra" (click)="toogleMenu()">
+    <i class="fa-sharp fa-solid fa-bars"></i>
+  </div>
+    <router-outlet></router-outlet>
+    
+ 
+    </div>
+   
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
